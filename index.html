@@ -1,202 +1,186 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2685.1">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Solsta — Electronic Components & IoT Solutions (Clone)</title>
+  <meta name="description" content="Solsta — distributor of electronic components, IoT and value-added services. Responsive single-file prototype." />
+  <style>
+    :root{--accent:#005b9a;--muted:#6b7280;--bg:#f7f7fb}
+    *{box-sizing:border-box}
+    body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;line-height:1.5;margin:0;background:var(--bg);color:#111}
+    a{color:inherit;text-decoration:none}
+    header{background:#fff;border-bottom:1px solid #e6e9ef}
+    .container{max-width:1100px;margin:0 auto;padding:24px}
+    .topbar{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .brand img{height:38px}
+    nav ul{display:flex;gap:14px;list-style:none;padding:0;margin:0}
+    nav a{padding:10px 8px;color:var(--muted);border-radius:6px}
+    nav a:hover{color:var(--accent);background:#f1f7fb}
+    .hero{background:linear-gradient(180deg,rgba(0,91,154,0.06),transparent);padding:48px 0}
+    .hero-grid{display:grid;grid-template-columns:1fr 380px;gap:32px;align-items:start}
+    .eyebrow{color:var(--accent);font-weight:600}
+    h1{font-size:28px;margin:8px 0 12px}
+    p.lead{color:var(--muted);margin:0 0 18px}
+    .cta{display:inline-block;background:var(--accent);color:#fff;padding:10px 16px;border-radius:8px;font-weight:600}
+    .services, .highlights{background:#fff;margin-top:20px;border-radius:10px;padding:18px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+    .card{padding:14px;border:1px solid #eef2f6;border-radius:8px;background:#fff}
+    .card h4{margin:0 0 8px}
+    .card p{margin:0;color:var(--muted);font-size:14px}
+    .sidebar{background:#fff;padding:14px;border-radius:8px;border:1px solid #eef2f6}
+    footer{margin-top:30px;padding:28px 0;background:#0f1724;color:#fff}
+    .footer-grid{display:grid;grid-template-columns:1fr 220px;gap:20px;align-items:start}
+    .muted{color:var(--muted)}
+    /* responsive */
+    @media (max-width:900px){.hero-grid{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr}.brand img{height:30px}}
   </style>
 </head>
 <body>
-<p class="p1">&lt;!doctype html&gt;</p>
-<p class="p1">&lt;html lang="en"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="utf-8"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width,initial-scale=1"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;Solsta — Electronic Components &amp; IoT Solutions (Clone)&lt;/title&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="description" content="Solsta — distributor of electronic components, IoT and value-added services. Responsive single-file prototype." /&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>:root{--accent:#005b9a;--muted:#6b7280;--bg:#f7f7fb}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>*{box-sizing:border-box}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;line-height:1.5;margin:0;background:var(--bg);color:#111}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>a{color:inherit;text-decoration:none}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>header{background:#fff;border-bottom:1px solid #e6e9ef}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.container{max-width:1100px;margin:0 auto;padding:24px}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.topbar{display:flex;align-items:center;justify-content:space-between;gap:16px}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.brand{display:flex;align-items:center;gap:12px}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.brand img{height:38px}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>nav ul{display:flex;gap:14px;list-style:none;padding:0;margin:0}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>nav a{padding:10px 8px;color:var(--muted);border-radius:6px}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>nav a:hover{color:var(--accent);background:#f1f7fb}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.hero{background:linear-gradient(180deg,rgba(0,91,154,0.06),transparent);padding:48px 0}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.hero-grid{display:grid;grid-template-columns:1fr 380px;gap:32px;align-items:start}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.eyebrow{color:var(--accent);font-weight:600}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>h1{font-size:28px;margin:8px 0 12px}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>p.lead{color:var(--muted);margin:0 0 18px}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.cta{display:inline-block;background:var(--accent);color:#fff;padding:10px 16px;border-radius:8px;font-weight:600}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.services, .highlights{background:#fff;margin-top:20px;border-radius:10px;padding:18px}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.card{padding:14px;border:1px solid #eef2f6;border-radius:8px;background:#fff}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.card h4{margin:0 0 8px}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.card p{margin:0;color:var(--muted);font-size:14px}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.sidebar{background:#fff;padding:14px;border-radius:8px;border:1px solid #eef2f6}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>footer{margin-top:30px;padding:28px 0;background:#0f1724;color:#fff}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.footer-grid{display:grid;grid-template-columns:1fr 220px;gap:20px;align-items:start}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.muted{color:var(--muted)}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>/* responsive */</p>
-<p class="p1"><span class="Apple-converted-space">    </span>@media (max-width:900px){.hero-grid{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr}.brand img{height:30px}}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;header&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container topbar"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="brand"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;img src="https://via.placeholder.com/160x40?text=Solsta" alt="Solsta logo"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div style="font-weight:700"&gt;Solsta&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div style="font-size:12px;color:var(--muted)"&gt;The vital component&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;nav aria-label="Primary navigation"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;li&gt;&lt;a href="#products"&gt;Products&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;li&gt;&lt;a href="#services"&gt;Services&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;li&gt;&lt;a href="#manufacturers"&gt;Manufacturers&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;li&gt;&lt;a href="#news"&gt;News&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;li&gt;&lt;a href="#contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/nav&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/header&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;main class="container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;section class="hero"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="hero-grid"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="eyebrow"&gt;World-leading component distribution&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;h1&gt;Electronic components, displays, IoT and value‑added services&lt;/h1&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;p class="lead"&gt;We supply components, modules and end-to-end IoT solutions for commercial, industrial and defence markets — backed by configuration, programming and manufacturing support.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;a class="cta" href="#contact"&gt;Get in touch&lt;/a&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div style="margin-top:18px" class="services"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h3 style="margin:0 0 10px"&gt;Value Added Services&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="grid"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="card"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;h4&gt;Tape &amp;amp; Reel&lt;/h4&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;Device programming and packaging for production readiness.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="card"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;h4&gt;Router Configuration&lt;/h4&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;Site-ready router and modem configuration services.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="card"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;h4&gt;Military &amp;amp; Hi‑Rel Sourcing&lt;/h4&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;Obsolete and hard-to-find components with anti-counterfeit checks.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="card"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;h4&gt;Bake &amp;amp; Seal&lt;/h4&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;Assurance that parts arrive ready for assembly.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;aside class="sidebar"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;h4 style="margin-top:0"&gt;Featured&lt;/h4&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;p class="muted"&gt;Products, news and events&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;ul style="padding-left:16px;margin-top:12px;color:var(--muted)"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;&lt;strong&gt;Advanced Engineering&lt;/strong&gt; — design &amp;amp; manufacturing show&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;&lt;strong&gt;Routers &amp;amp; Gateways&lt;/strong&gt; — secure connectivity solutions&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;&lt;strong&gt;RF &amp;amp; Wireless&lt;/strong&gt; — industry insight articles&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div style="margin-top:12px"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="#manufacturers" style="display:inline-block;padding:8px 10px;border-radius:6px;border:1px solid #e6eef8;font-weight:600"&gt;See all manufacturers&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;hr style="margin:14px 0;border:none;border-top:1px solid #eef2f6"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;h5 style="margin:0"&gt;Contact&lt;/h5&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;p style="margin:6px 0" class="muted"&gt;+44 (0) 1527 830800&lt;br&gt;&lt;a href="mailto:sales@solsta.co.uk"&gt;sales@solsta.co.uk&lt;/a&gt;&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;p style="font-size:13px;color:var(--muted)"&gt;Ravensbank Business Park&lt;br&gt;Hedera Road, Redditch, B98 9EY&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/aside&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="manufacturers" style="margin-top:18px" class="highlights"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;h3 style="margin-top:0"&gt;Official Franchised Distributor&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="muted"&gt;We partner with leading manufacturers across multiple categories.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="grid" style="margin-top:12px"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="card"&gt;Manufacturer A&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="card"&gt;Manufacturer B&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="card"&gt;Manufacturer C&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="card"&gt;Manufacturer D&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="news" style="margin-top:18px"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="highlights"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3 style="margin-top:0"&gt;Featured Highlights&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="grid" style="margin-top:10px"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="card"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h4&gt;Advanced Engineering — show&lt;/h4&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="muted"&gt;Find our complete end-to-end solutions for optoelectronics, sensing and displays.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="card"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h4&gt;Gateway Electronics&lt;/h4&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="muted"&gt;Specialist ferrites &amp;amp; magnetic components from our partners.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="card"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h4&gt;RF &amp;amp; Wireless articles&lt;/h4&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="muted"&gt;Exploring trends in RF and wireless communications.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="contact" style="margin-top:18px"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="highlights"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3 style="margin-top:0"&gt;Contact &amp;amp; Resources&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div style="display:flex;gap:20px;flex-wrap:wrap"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;form style="flex:1;min-width:260px;max-width:640px" onsubmit="event.preventDefault();alert('Form submitted (demo)')"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;label style="display:block;margin-bottom:8px"&gt;Name &lt;input required style="width:100%;padding:10px;margin-top:6px;border:1px solid #e6eef6;border-radius:6px"&gt;&lt;/label&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;label style="display:block;margin-bottom:8px"&gt;Email &lt;input required type="email" style="width:100%;padding:10px;margin-top:6px;border:1px solid #e6eef6;border-radius:6px"&gt;&lt;/label&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;label style="display:block;margin-bottom:8px"&gt;Message &lt;textarea required style="width:100%;padding:10px;margin-top:6px;border:1px solid #e6eef6;border-radius:6px;height:100px"&gt;&lt;/textarea&gt;&lt;/label&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;button class="cta" type="submit"&gt;Send message&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/form&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div style="min-width:220px"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h4 style="margin-top:0"&gt;Download&lt;/h4&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="muted"&gt;Line Card (PDF) and product datasheets are available on request.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p style="margin-top:12px"&gt;&lt;a href="#" style="font-weight:600"&gt;Download Line Card (PDF)&lt;/a&gt;&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/main&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;footer&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container footer-grid"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;img src="https://via.placeholder.com/130x34?text=Solsta" alt="Solsta logo"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p style="color:rgba(255,255,255,0.85)"&gt;Solsta is a leading electronic component distributor and a catalyst for technological innovation.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p style="color:rgba(255,255,255,0.75);font-size:13px;margin-top:6px"&gt;Copyright © 2025 Solsta Limited&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h4 style="margin-top:0"&gt;Quick links&lt;/h4&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;ul style="list-style:none;padding:0;margin:0;color:rgba(255,255,255,0.9)"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;li&gt;&lt;a href="#products"&gt;Products&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;li&gt;&lt;a href="#services"&gt;Services&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;li&gt;&lt;a href="#news"&gt;News&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;li&gt;&lt;a href="#contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/footer&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+  <header>
+    <div class="container topbar">
+      <div class="brand">
+        <img src="https://via.placeholder.com/160x40?text=Solsta" alt="Solsta logo">
+        <div>
+          <div style="font-weight:700">Solsta</div>
+          <div style="font-size:12px;color:var(--muted)">The vital component</div>
+        </div>
+      </div>
+      <nav aria-label="Primary navigation">
+        <ul>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#manufacturers">Manufacturers</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-grid">
+        <div>
+          <div class="eyebrow">World-leading component distribution</div>
+          <h1>Electronic components, displays, IoT and value‑added services</h1>
+          <p class="lead">We supply components, modules and end-to-end IoT solutions for commercial, industrial and defence markets — backed by configuration, programming and manufacturing support.</p>
+          <a class="cta" href="#contact">Get in touch</a>
+
+          <div style="margin-top:18px" class="services">
+            <h3 style="margin:0 0 10px">Value Added Services</h3>
+            <div class="grid">
+              <div class="card">
+                <h4>Tape &amp; Reel</h4>
+                <p>Device programming and packaging for production readiness.</p>
+              </div>
+              <div class="card">
+                <h4>Router Configuration</h4>
+                <p>Site-ready router and modem configuration services.</p>
+              </div>
+              <div class="card">
+                <h4>Military &amp; Hi‑Rel Sourcing</h4>
+                <p>Obsolete and hard-to-find components with anti-counterfeit checks.</p>
+              </div>
+              <div class="card">
+                <h4>Bake &amp; Seal</h4>
+                <p>Assurance that parts arrive ready for assembly.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <aside class="sidebar">
+          <h4 style="margin-top:0">Featured</h4>
+          <p class="muted">Products, news and events</p>
+          <ul style="padding-left:16px;margin-top:12px;color:var(--muted)">
+            <li><strong>Advanced Engineering</strong> — design &amp; manufacturing show</li>
+            <li><strong>Routers &amp; Gateways</strong> — secure connectivity solutions</li>
+            <li><strong>RF &amp; Wireless</strong> — industry insight articles</li>
+          </ul>
+          <div style="margin-top:12px">
+            <a href="#manufacturers" style="display:inline-block;padding:8px 10px;border-radius:6px;border:1px solid #e6eef8;font-weight:600">See all manufacturers</a>
+          </div>
+          <hr style="margin:14px 0;border:none;border-top:1px solid #eef2f6">
+          <h5 style="margin:0">Contact</h5>
+          <p style="margin:6px 0" class="muted">+44 (0) 1527 830800<br><a href="mailto:sales@solsta.co.uk">sales@solsta.co.uk</a></p>
+          <p style="font-size:13px;color:var(--muted)">Ravensbank Business Park<br>Hedera Road, Redditch, B98 9EY</p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="manufacturers" style="margin-top:18px" class="highlights">
+      <h3 style="margin-top:0">Official Franchised Distributor</h3>
+      <p class="muted">We partner with leading manufacturers across multiple categories.</p>
+      <div class="grid" style="margin-top:12px">
+        <div class="card">Manufacturer A</div>
+        <div class="card">Manufacturer B</div>
+        <div class="card">Manufacturer C</div>
+        <div class="card">Manufacturer D</div>
+      </div>
+    </section>
+
+    <section id="news" style="margin-top:18px">
+      <div class="highlights">
+        <h3 style="margin-top:0">Featured Highlights</h3>
+        <div class="grid" style="margin-top:10px">
+          <div class="card">
+            <h4>Advanced Engineering — show</h4>
+            <p class="muted">Find our complete end-to-end solutions for optoelectronics, sensing and displays.</p>
+          </div>
+          <div class="card">
+            <h4>Gateway Electronics</h4>
+            <p class="muted">Specialist ferrites &amp; magnetic components from our partners.</p>
+          </div>
+          <div class="card">
+            <h4>RF &amp; Wireless articles</h4>
+            <p class="muted">Exploring trends in RF and wireless communications.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" style="margin-top:18px">
+      <div class="highlights">
+        <h3 style="margin-top:0">Contact &amp; Resources</h3>
+        <div style="display:flex;gap:20px;flex-wrap:wrap">
+          <form style="flex:1;min-width:260px;max-width:640px" onsubmit="event.preventDefault();alert('Form submitted (demo)')">
+            <label style="display:block;margin-bottom:8px">Name <input required style="width:100%;padding:10px;margin-top:6px;border:1px solid #e6eef6;border-radius:6px"></label>
+            <label style="display:block;margin-bottom:8px">Email <input required type="email" style="width:100%;padding:10px;margin-top:6px;border:1px solid #e6eef6;border-radius:6px"></label>
+            <label style="display:block;margin-bottom:8px">Message <textarea required style="width:100%;padding:10px;margin-top:6px;border:1px solid #e6eef6;border-radius:6px;height:100px"></textarea></label>
+            <button class="cta" type="submit">Send message</button>
+          </form>
+
+          <div style="min-width:220px">
+            <h4 style="margin-top:0">Download</h4>
+            <p class="muted">Line Card (PDF) and product datasheets are available on request.</p>
+            <p style="margin-top:12px"><a href="#" style="font-weight:600">Download Line Card (PDF)</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <img src="https://via.placeholder.com/130x34?text=Solsta" alt="Solsta logo">
+        <p style="color:rgba(255,255,255,0.85)">Solsta is a leading electronic component distributor and a catalyst for technological innovation.</p>
+        <p style="color:rgba(255,255,255,0.75);font-size:13px;margin-top:6px">Copyright © 2025 Solsta Limited</p>
+      </div>
+      <div>
+        <h4 style="margin-top:0">Quick links</h4>
+        <ul style="list-style:none;padding:0;margin:0;color:rgba(255,255,255,0.9)">
+          <li><a href="#products">Products</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>
